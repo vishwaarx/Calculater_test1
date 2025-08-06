@@ -28,47 +28,101 @@ Before you begin, ensure you have the following installed:
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 - [Git](https://git-scm.com/)
 
-## 🚀 Getting Started
+## 🚀 Installation & Setup
 
-### 1. Clone the Repository
+### Step 1: Clone the Repository
 
 ```bash
+# Clone the repository
 git clone https://github.com/yourusername/calculater_test1.git
+
+# Navigate to the project directory
 cd calculater_test1
 ```
 
-### 2. Install Dependencies
+### Step 2: Install Dependencies
 
 ```bash
+# Using npm
 npm install
-# or
+
+# OR using yarn
 yarn install
+
+# OR using pnpm
+pnpm install
 ```
 
-### 3. Run the Development Server
+### Step 3: Environment Setup
+
+Create a `.env.local` file in the root directory (if needed for future features):
 
 ```bash
+# Create environment file
+touch .env.local
+```
+
+### Step 4: Run the Development Server
+
+```bash
+# Using npm
 npm run dev
-# or
+
+# OR using yarn
 yarn dev
+
+# OR using pnpm
+pnpm dev
 ```
 
 The application will be available at [http://localhost:9002](http://localhost:9002).
 
-### 4. Build for Production
+### Step 5: Build for Production
 
 ```bash
+# Using npm
 npm run build
-# or
+
+# OR using yarn
 yarn build
+
+# OR using pnpm
+pnpm build
 ```
 
-### 5. Start Production Server
+### Step 6: Start Production Server
 
 ```bash
+# Using npm
 npm start
-# or
+
+# OR using yarn
 yarn start
+
+# OR using pnpm
+pnpm start
+```
+
+## 🔧 Development Commands
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+
+# Run linting
+npm run lint
+
+# Run TypeScript type checking
+npm run typecheck
+
+# Run AI development server (if using Genkit)
+npm run genkit:dev
 ```
 
 ## 📁 Project Structure
@@ -83,22 +137,32 @@ calculater_test1/
 │   ├── components/
 │   │   └── ui/               # shadcn/ui components
 │   ├── lib/
-│   └── hooks/
+│   ├── hooks/
+│   └── ai/                   # AI-related files
 ├── docs/
 │   └── blueprint.md          # Project specifications
-├── package.json
-├── tailwind.config.ts
-├── next.config.ts
+├── public/                   # Static assets
+├── package.json              # Dependencies and scripts
+├── package-lock.json         # Lock file
+├── tailwind.config.ts        # Tailwind configuration
+├── next.config.ts           # Next.js configuration
+├── tsconfig.json            # TypeScript configuration
+├── postcss.config.mjs       # PostCSS configuration
+├── components.json          # shadcn/ui configuration
 └── README.md
 ```
 
 ## 🎯 Available Scripts
 
-- `npm run dev` - Start development server with Turbopack
-- `npm run build` - Build the application for production
-- `npm run start` - Start the production server
-- `npm run lint` - Run ESLint
-- `npm run typecheck` - Run TypeScript type checking
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server with Turbopack on port 9002 |
+| `npm run build` | Build the application for production |
+| `npm run start` | Start the production server |
+| `npm run lint` | Run ESLint for code quality |
+| `npm run typecheck` | Run TypeScript type checking |
+| `npm run genkit:dev` | Start Genkit AI development server |
+| `npm run genkit:watch` | Start Genkit with file watching |
 
 ## 🎨 Design Features
 
@@ -109,6 +173,33 @@ calculater_test1/
 - **Typography**: Inter font family for clarity and modernity
 - **Animations**: Subtle button press animations for tactile feedback
 - **Layout**: Standard calculator layout for familiarity and ease of use
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+1. **Port 9002 already in use**
+   ```bash
+   # Kill the process using port 9002
+   npx kill-port 9002
+   # Then run the dev server again
+   npm run dev
+   ```
+
+2. **Dependencies not installing**
+   ```bash
+   # Clear npm cache
+   npm cache clean --force
+   # Delete node_modules and reinstall
+   rm -rf node_modules package-lock.json
+   npm install
+   ```
+
+3. **TypeScript errors**
+   ```bash
+   # Run type checking
+   npm run typecheck
+   ```
 
 ## 🤝 Contributing
 
