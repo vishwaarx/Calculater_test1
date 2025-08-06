@@ -75,7 +75,7 @@ yarn dev
 pnpm dev
 ```
 
-The application will be available at [http://localhost:9002](http://localhost:9002).
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
 ### Step 5: Build for Production
 
@@ -156,7 +156,7 @@ calculater_test1/
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Start development server with Turbopack on port 9002 |
+| `npm run dev` | Start development server with Turbopack on port 3000 |
 | `npm run build` | Build the application for production |
 | `npm run start` | Start the production server |
 | `npm run lint` | Run ESLint for code quality |
@@ -178,10 +178,10 @@ calculater_test1/
 
 ### Common Issues
 
-1. **Port 9002 already in use**
+1. **Port 3000 already in use**
    ```bash
-   # Kill the process using port 9002
-   npx kill-port 9002
+   # Kill the process using port 3000
+   npx kill-port 3000
    # Then run the dev server again
    npm run dev
    ```
