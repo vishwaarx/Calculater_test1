@@ -29,79 +29,21 @@ Before you begin, ensure you have the following installed:
 - [Git](https://git-scm.com/)
 
 ## 🚀 Installation & Setup
-
-### Step 1: Clone the Repository
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/calculater_test1.git
-
-# Navigate to the project directory
-cd calculater_test1
-```
-
-### Step 2: Install Dependencies
+## Installation
 
 ```bash
-# Using npm
 npm install
-
-# OR using yarn
-yarn install
-
-# OR using pnpm
-pnpm install
 ```
 
-### Step 3: Environment Setup
-
-Create a `.env.local` file in the root directory (if needed for future features):
+## Usage
 
 ```bash
-# Create environment file
-touch .env.local
-```
-
-### Step 4: Run the Development Server
-
-```bash
-# Using npm
 npm run dev
-
-# OR using yarn
-yarn dev
-
-# OR using pnpm
-pnpm dev
+```
 ```
 
-The application will be available at [http://localhost:9002](http://localhost:9002).
 
-### Step 5: Build for Production
 
-```bash
-# Using npm
-npm run build
-
-# OR using yarn
-yarn build
-
-# OR using pnpm
-pnpm build
-```
-
-### Step 6: Start Production Server
-
-```bash
-# Using npm
-npm start
-
-# OR using yarn
-yarn start
-
-# OR using pnpm
-pnpm start
-```
 
 ## 🔧 Development Commands
 
